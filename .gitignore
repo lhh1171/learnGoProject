@@ -1,0 +1,9 @@
+src/iotestgo/
+pkg/
+src/awesomeProject/
+src/github.com/
+src/gomicro自动生成框架/
+src/iotestgo_micro_new/
+src/iotestgoweb_gin/
+src/iotestgo_grpc/
+src/golang.org/
