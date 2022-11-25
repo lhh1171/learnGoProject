@@ -11,7 +11,7 @@ func main() {
 	/*闭包*/
 	//abc.Ff3()
 	/*defer函数*/
-	//abc.MyDefer()
+	abc.MyDefer()
 	//abc.MyDefer2()
 	//defer
 	//abc.MyStruct()
@@ -21,6 +21,6 @@ func main() {
 		{int int8 string}//8+1+(7)+16
 		补了个7
 	*/
-	abc.MyStruct2()
-	abc.MyStruct3()
+	//abc.MyStruct2()
+	//abc.MyStruct3()
 }

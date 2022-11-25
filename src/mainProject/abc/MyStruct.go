@@ -28,6 +28,7 @@ func MyStruct2() {
 		Id   int    //8
 		Name string //16
 	}
+	//拿指针拼对象
 	var arr [3]int64 = [3]int64{}
 	arr[0] = 99
 	arr[2] = 3
@@ -38,6 +39,7 @@ func MyStruct2() {
 	fmt.Println(p.Id, "\t", p.Name)
 }
 func MyStruct3() {
+	//实现继承
 	type Person struct {
 		Id   int    //8
 		Name string //16
@@ -46,6 +48,7 @@ func MyStruct3() {
 		Person
 		age int
 	}
+	//构造函数
 	s := stu{
 		age: 1,
 		Person: struct {
@@ -53,6 +56,13 @@ func MyStruct3() {
 			Name string
 		}{},
 	}
+	//s := stu{
+	//	age: 1,
+	//	Person: struct {
+	//		Id   int
+	//		Name string
+	//	}{2,"ds"},
+	//}
 	s.age = 22
 	s.Id = 1
 	s.Name = "aaa"

@@ -1,6 +1,9 @@
 package abc
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 type Person struct {
 	Id   int    //8
@@ -10,6 +13,9 @@ type Person struct {
 func (p Person) setPerson(i int, s string) {
 	p.Id = i
 	p.Name = s
+}
+func (p Person) Dis() {
+	fmt.Println(strconv.Itoa(p.Id) + "\t" + p.Name)
 }
 func myOop() {
 	p := Person{1, "oooo"}
