@@ -11,7 +11,7 @@ func main() {
 	/*闭包*/
 	//abc.Ff3()
 	/*defer函数*/
-	abc.MyDefer()
+	//abc.MyDefer()
 	//abc.MyDefer2()
 	//defer
 	//abc.MyStruct()
@@ -23,4 +23,7 @@ func main() {
 	*/
 	//abc.MyStruct2()
 	//abc.MyStruct3()
+
+	//Const
+	abc.TestConst()
 }

@@ -1,4 +1,4 @@
-package main
+package mygoroutine
 
 import (
 	"fmt"
@@ -41,12 +41,16 @@ func TestSimple1() {
 	fmt.Println("xxxxx")
 }
 
+// 单向传递，只写
 func run3(c chan<- int8) {
 	var a int8 = 99
 	time.Sleep(1 * time.Second)
 	//产生了一条数据
 	c <- a
+
 }
+
+// 单向传递，只读
 func run4(c <-chan int8) {
 	d := <-c
 	fmt.Println(d)
