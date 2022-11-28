@@ -1,6 +1,6 @@
 package main
 
-import "mainProject/abc"
+import "mainProject/myref"
 
 func main() {
 	/*函数声明和调用*/
@@ -25,5 +25,28 @@ func main() {
 	//abc.MyStruct3()
 
 	//Const
-	abc.TestConst()
+	//abc.TestConst()
+
+	/*=================反射reflect====================*/
+	//TypeOf获取字段属性以及字段相关的东西,ValueOf获取字段的值以及值相关的东西
+	//myref.Myref1()
+
+	//Field获取成员变量的name和type,Method获取方法的name和type
+	//myref.Myref2()
+
+	//指针通过elem获取内容，通过method获取方法,通过elem仅能获取非指针对象的引用方法
+	//myref.Myref3()
+
+	//获取成员FieldByName，FieldByIndex，FieldByIndex，MethodByName
+	//myref.Myref4()
+
+	//反射基础数据类型,elem的set和canSet(有点像右值)，Call调用函数
+	//myref.Myref5()
+
+	//type.go里面的api
+	myref.Myref6()
+
+	//运用反射构建map量表，classForName
+	//myref.Myref7()
+
 }
