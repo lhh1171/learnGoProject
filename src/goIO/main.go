@@ -1,5 +1,7 @@
 package main
 
+import "goIO/mysock/mynet/myrpc"
+
 func main() {
 	//写入文件
 	//myfile.Myfile1()
@@ -63,4 +65,8 @@ func main() {
 	//myhttp2.MyHttp2Server()
 	//myhttp2.MyHttp2Cli()
 
+	//myws.MyWsServer()
+
+	myrpc.MyRPCServer()
+	//myrpc.MyRPCCli()
 }
