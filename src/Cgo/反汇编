@@ -1,0 +1,42 @@
+main.go内容如下：
+
+package main
+import (
+	"fmt"
+)
+func main() {
+	fmt.Println("zzzzzzzzzzz")
+}
+可以使用以下的命令反汇编出来plan9汇编指令的内容：
+#以下两种命令都可以
+go tool compile -S main.go
+go build -gcflags -S main.go
+
+下面是linux系统的内容：
+
+# go tool compile -S main.go
+"".main STEXT size=138 args=0x0 locals=0x58 funcid=0x0
+        0x0000 00000 (main.go:9)        TEXT    "".main(SB), ABIInternal, $88-0
+        0x0000 00000 (main.go:9)        MOVQ    (TLS), CX
+        0x0009 00009 (main.go:9)        CMPQ    SP, 16(CX)
+        0x000d 00013 (main.go:9)        PCDATA  $0, $-2
+        0x000d 00013 (main.go:9)        JLS     128
+        0x000f 00015 (main.go:9)        PCDATA  $0, $-1
+        0x000f 00015 (main.go:9)        SUBQ    $88, SP
+        0x0013 00019 (main.go:9)        MOVQ    BP, 80(SP)
+        0x0018 00024 (main.go:9)        LEAQ    80(SP), BP
+        0x001d 00029 (main.go:9)        FUNCDATA        $0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+        0x001d 00029 (main.go:9)        FUNCDATA        $1, gclocals·f207267fbf96a0178e8758c6e3e0ce28(SB)
+        0x001d 00029 (main.go:9)        FUNCDATA        $2, "".main.stkobj(SB)
+        0x001d 00029 (main.go:10)       XORPS   X0, X0
+        0x0020 00032 (main.go:10)       MOVUPS  X0, ""..autotmp_11+64(SP)
+        0x0025 00037 (main.go:10)       LEAQ    type.string(SB), AX
+        0x002c 00044 (main.go:10)       MOVQ    AX, ""..autotmp_11+64(SP)
+        0x0031 00049 (main.go:10)       LEAQ    ""..stmp_0(SB), AX
+        0x0038 00056 (main.go:10)       MOVQ    AX, ""..autotmp_11+72(SP)
+        0x003d 00061 (<unknown line number>)    NOP
+
+或者先编译成可执行文件，再dump成汇编
+go build
+//转化成汇编代码
+go tool objdump main

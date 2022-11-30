@@ -1,0 +1,29 @@
+创建一个main模块用于导出静态库和动态库，代码如下：
+====================================================
+package main
+
+import "C"
+
+func main(){
+}
+
+//export add_mod
+func add_mod(a C.int,b C.int)C.int{
+	return a+b
+}
+====================================================
+
+静态库：
+//go build -buildmode=c-archive -o num.a
+1、将编译好的num.a和num.h放入该文件夹
+2、gcc testmain.c num.a -pthread -o a.out #务必注意加上这个-pthread
+3、测试a.out
+
+
+动态库：
+//go build -buildmode=c-shared -o num.so
+1、将编译好的num.so和num.h放入该文件夹
+2、export LD_LIBRARY_PATH=./
+3、gcc testmain.c num.so -o a.out
+4、测试a.out
+

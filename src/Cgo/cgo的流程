@@ -1,0 +1,4 @@
+cgocall中几个重要函数功能说明：
+1）entersyscall()将当前的M与P剥离，防止C程序独占M时，阻塞P的调度。
+2）asmcgocall()将栈切换到g0的系统栈，并执行C函数调用
+3）exitsyscall()寻找合适的P来运行从C函数返回的Go程，优先选择调用C之前依附的P，其次选择其他空闲的P

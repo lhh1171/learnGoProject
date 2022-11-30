@@ -1,0 +1,13 @@
+#cgo
+用来设置编译阶段和链接阶段的相关参数
+//#cgo CFLAGS: -DXXX=1 -I./include
+//#cgo LDFLAGS: -L/usr/local/lib -lXXX
+//#include<XXX.h>
+
+-D部分定义宏，-I可以使用相对路径（c语言头文件可以使用相对路径，但库文件必须使用绝对路径）
+可以使用${SRCDIR}获取当前位置的绝对路径
+//#cgo LDFLAGS: -L${SRCDIR}/lib -lXXX
+这句等同于
+//#cgo LDFLAGS: -L/ /home/andilyliao/桌面/代码/程序例子_01_iotest-go/src/iotestgo/goandc/cgo/mycgo7/lib -lXXX
+
+#cgo主要设置CFLAGS、CPPFLAGS、CXXFLAGS、FFLAGS和LDFLAGS

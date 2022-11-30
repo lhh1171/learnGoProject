@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ff7cffc-4764-40b8-91b9-cd93b4666cf9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Cgo/bartest.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo3/hello.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo3/mycgo3.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo4/hello.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo4/hello.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo4/mycgo4.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo5/hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo5/hello.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo5/mycgo5.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo6_err/hello/hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo6_err/mycgo6.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo7/mycgo7.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo7/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/c语言导出go类型" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_3.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_4.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_5.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_6.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_7.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_8.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_9.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/数据类型对应关系.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/数据类型对应关系2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/num.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/num.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/num.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/testmain.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/编译" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo内部机制.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo执行的效果.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo流程.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/cgo的流程" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/goandc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/load_so.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/load_so.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/test_so.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/test_so.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/test_so.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cgo/反汇编" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexec.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexec2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysignal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysyscall.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysyscall2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../goIO/xx/run.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../goIO/xx/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/awesomeProject1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/vcs.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go Application" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///path/go1.19.linux-amd64/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IGbvxNycC0SqbVHOGC5CkEGYUz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go Application&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/MyProject/goProject/src/Sys&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build Sys" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Sys" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="Sys" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build Sys" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
