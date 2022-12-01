@@ -4,66 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ff7cffc-4764-40b8-91b9-cd93b4666cf9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Cgo/bartest.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo3/hello.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo3/mycgo3.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo4/hello.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo4/hello.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo4/mycgo4.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo5/hello.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo5/hello.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo5/mycgo5.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo6_err/hello/hello.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo6_err/mycgo6.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo7/mycgo7.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo7/readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/c语言导出go类型" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_3.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_4.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_5.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_6.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_7.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_8.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_9.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/数据类型对应关系.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/数据类型对应关系2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/num.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/num.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/num.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/testmain.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/编译" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo内部机制.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo执行的效果.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo流程.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/cgo的流程" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/goandc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/load_so.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/load_so.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/test_so.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/test_so.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/test_so.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cgo/反汇编" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexec.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexec2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysignal.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysyscall.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysyscall2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../goIO/xx/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../goIO/xx/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/awesomeProject1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/vcs.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="4ff7cffc-4764-40b8-91b9-cd93b4666cf9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

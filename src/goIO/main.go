@@ -1,6 +1,6 @@
 package main
 
-import "goIO/mysock/mynet/myrpc"
+import "goIO/mysock/mynet"
 
 func main() {
 	//写入文件
@@ -44,7 +44,7 @@ func main() {
 	//broadcast.MyBCCli()
 
 	//=========网络io-http相关================
-	//mynet.MyHttp1()
+	mynet.MyHttp1()
 	//mynet.MyHttp2()
 	//mynet.MyHttp21()
 	//mynet.MyHttp22()
@@ -67,6 +67,6 @@ func main() {
 
 	//myws.MyWsServer()
 
-	myrpc.MyRPCServer()
+	//myrpc.MyRPCServer()
 	//myrpc.MyRPCCli()
 }
