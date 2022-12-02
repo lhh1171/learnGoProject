@@ -1,0 +1,6 @@
+protoc --micro_out=../ --go_out=../ IV4.proto
+
+
+go.mod修改：
+	google.golang.org/grpc v1.26.0 #务必，否则报错
+	google.golang.org/protobuf v1.22.0

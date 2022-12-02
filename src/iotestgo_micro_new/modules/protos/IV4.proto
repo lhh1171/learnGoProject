@@ -1,0 +1,13 @@
+syntax="proto3";
+package modules;
+
+message IV4Req{
+  string id=1;
+}
+message IV4Module{
+  string id=1;
+  string name=2;
+}
+message IV4Resp{
+  repeated IV4Module data=1;
+}

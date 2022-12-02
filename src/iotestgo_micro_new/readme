@@ -1,0 +1,1 @@
+新版本的go-micro已经慢慢的开始不支持consul了，所以建议安装etcd
