@@ -1,4 +1,4 @@
-# Hellworld2 Service
+# example Service
 
 This is the example service for Calling hellworld2 Service
 
