@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"com/justin/micro/kit/library-user-service/models"
-	"com/justin/micro/kit/pkg/databases"
+	"micro/kit/library-user-service/models"
+	"micro/kit/pkg/databases"
 )
 
 type UserDao interface {

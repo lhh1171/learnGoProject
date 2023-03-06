@@ -1,12 +1,13 @@
 package main
 
 import (
-	"com/justin/micro/kit/library-user-service/dao"
-	"com/justin/micro/kit/library-user-service/endpoint"
-	"com/justin/micro/kit/library-user-service/service"
-	"com/justin/micro/kit/library-user-service/transport"
-	"com/justin/micro/kit/pkg/configs"
-	"com/justin/micro/kit/pkg/databases"
+	"micro/kit/library-user-service/dao"
+	"micro/kit/library-user-service/endpoint"
+	"micro/kit/library-user-service/service"
+	"micro/kit/library-user-service/transport"
+	"micro/kit/pkg/configs"
+	"micro/kit/pkg/databases"
+
 	"context"
 	"flag"
 	"fmt"
@@ -16,12 +17,12 @@ import (
 	"strconv"
 	"syscall"
 
-	pbbook "com/justin/micro/kit/protos/book"
+	pbbook "micro/kit/protos/book"
 
 	"google.golang.org/grpc"
 )
 
-var confFile = flag.String("f", "user.yaml", "user config file")
+var confFile = flag.String("f", "library-user-service/user.yaml", "user config file")
 
 func main() {
 	flag.Parse()

@@ -1,12 +1,12 @@
 package service
 
 import (
-	"com/justin/micro/kit/library-book-service/dao"
-	"com/justin/micro/kit/library-book-service/dto"
-	"com/justin/micro/kit/library-book-service/models"
 	"context"
 	"errors"
 	"log"
+	"micro/kit/library-book-service/dao"
+	"micro/kit/library-book-service/dto"
+	"micro/kit/library-book-service/models"
 
 	"github.com/jinzhu/gorm"
 )

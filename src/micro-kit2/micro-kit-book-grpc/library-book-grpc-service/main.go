@@ -1,27 +1,27 @@
 package main
 
 import (
-	"com/justin/micro/kit/library-book-grpc-service/dao"
-	"com/justin/micro/kit/library-book-grpc-service/endpoint"
-	"com/justin/micro/kit/library-book-grpc-service/service"
-	"com/justin/micro/kit/library-book-grpc-service/transport"
-	"com/justin/micro/kit/pkg/configs"
-	"com/justin/micro/kit/pkg/databases"
 	"context"
 	"flag"
 	"fmt"
+	"micro/kit/library-book-grpc-service/dao"
+	"micro/kit/library-book-grpc-service/endpoint"
+	"micro/kit/library-book-grpc-service/service"
+	"micro/kit/library-book-grpc-service/transport"
+	"micro/kit/pkg/configs"
+	"micro/kit/pkg/databases"
 	"net"
 	"os"
 	"os/signal"
 	"strconv"
 	"syscall"
 
-	pbbook "com/justin/micro/kit/protos/book"
+	pbbook "micro/kit/protos/book"
 
 	"google.golang.org/grpc"
 )
 
-var configFile = flag.String("f", "book_rpc.yaml", "book rpc config file")
+var configFile = flag.String("f", "library-book-grpc-service/book_rpc.yaml", "book rpc config file")
 var quiteChan = make(chan error, 1)
 
 func main() {

@@ -1,10 +1,10 @@
 package main
 
 import (
-	"com/justin/micro/kit/pkg/configs"
-	"com/justin/micro/kit/pkg/databases"
 	"flag"
 	"fmt"
+	"micro/kit/pkg/configs"
+	"micro/kit/pkg/databases"
 )
 
 var confFile = flag.String("f", "library-user-service/user.yaml", "user config file")

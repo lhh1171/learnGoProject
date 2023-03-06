@@ -8,5 +8,5 @@ mysql:
   port: 3306
   db: "library"
   username: "root"
-  password: "123456"
+  password: "root"
   debug: true

@@ -1,4 +1,4 @@
-module com/justin/micro/kit
+module micro/kit
 
 go 1.16
 

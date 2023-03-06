@@ -1,10 +1,10 @@
 package service
 
 import (
-	"com/justin/micro/kit/library-book-grpc-service/dao"
 	"context"
+	"micro/kit/library-book-grpc-service/dao"
 
-	pbbook "com/justin/micro/kit/protos/book"
+	pbbook "micro/kit/protos/book"
 )
 
 type BookService interface {

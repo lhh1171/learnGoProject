@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"com/justin/micro/kit/library-book-service/models"
-	"com/justin/micro/kit/pkg/databases"
+	"micro/kit/library-book-service/models"
+	"micro/kit/pkg/databases"
 )
 
 type BookDao interface {

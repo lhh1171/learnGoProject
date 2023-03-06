@@ -1,10 +1,10 @@
 package transport
 
 import (
-	"com/justin/micro/kit/library-book-grpc-service/endpoint"
 	"context"
+	"micro/kit/library-book-grpc-service/endpoint"
 
-	pbbook "com/justin/micro/kit/protos/book"
+	pbbook "micro/kit/protos/book"
 
 	kitrpc "github.com/go-kit/kit/transport/grpc"
 )

@@ -1,22 +1,22 @@
 package main
 
 import (
-	"com/justin/micro/kit/library-book-service/dao"
-	"com/justin/micro/kit/library-book-service/endpoint"
-	"com/justin/micro/kit/library-book-service/service"
-	"com/justin/micro/kit/library-book-service/transport"
-	"com/justin/micro/kit/pkg/configs"
-	"com/justin/micro/kit/pkg/databases"
 	"context"
 	"flag"
 	"fmt"
+	"micro/kit/library-book-service/dao"
+	"micro/kit/library-book-service/endpoint"
+	"micro/kit/library-book-service/service"
+	"micro/kit/library-book-service/transport"
+	"micro/kit/pkg/configs"
+	"micro/kit/pkg/databases"
 	"os"
 	"os/signal"
 	"strconv"
 	"syscall"
 )
 
-var confFile = flag.String("f", "book.yaml", "Book config file")
+var confFile = flag.String("f", "library-book-service/book.yaml", "Book config file")
 
 func main() {
 	flag.Parse()

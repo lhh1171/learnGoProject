@@ -1,9 +1,9 @@
 package endpoint
 
 import (
-	"com/justin/micro/kit/library-user-service/dto"
-	"com/justin/micro/kit/library-user-service/service"
 	"context"
+	"micro/kit/library-user-service/dto"
+	"micro/kit/library-user-service/service"
 	"strconv"
 
 	"github.com/go-kit/kit/endpoint"

@@ -1,4 +1,4 @@
-module micro-kit2
+modulemicro-kit2
 
 go 1.19
 

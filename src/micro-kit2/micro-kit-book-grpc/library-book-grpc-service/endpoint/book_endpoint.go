@@ -1,11 +1,11 @@
 package endpoint
 
 import (
-	"com/justin/micro/kit/library-book-grpc-service/service"
 	"context"
+	"micro/kit/library-book-grpc-service/service"
 
-	pbbook "com/justin/micro/kit/protos/book"
 	"github.com/go-kit/kit/endpoint"
+	pbbook "micro/kit/protos/book"
 )
 
 type BookEndpoints struct {
