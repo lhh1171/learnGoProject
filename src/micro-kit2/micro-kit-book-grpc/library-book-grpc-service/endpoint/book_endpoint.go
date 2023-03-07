@@ -8,6 +8,7 @@ import (
 	pbbook "micro/kit/protos/book"
 )
 
+// BookEndpoints 每一个请求对应一个endpoint。
 type BookEndpoints struct {
 	FindBooksByUserIDEndpoint endpoint.Endpoint
 }

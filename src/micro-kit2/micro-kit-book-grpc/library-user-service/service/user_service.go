@@ -31,14 +31,16 @@ type UserServiceImpl struct {
 	bookClient pbbook.BookClient
 }
 
-func NewUserServiceImpl(userDao dao.UserDao, bookClient pbbook.BookClient) UserService {
+func NewUserServiceImpl(userDao dao.UserDao,
+	bookClient pbbook.BookClient) UserService {
 	return &UserServiceImpl{
 		userDao:    userDao,
 		bookClient: bookClient,
 	}
 }
 
-func (u *UserServiceImpl) Register(ctx context.Context, vo *dto.RegisterUser) (*dto.UserInfo, error) {
+func (u *UserServiceImpl) Register(ctx context.Context,
+	vo *dto.RegisterUser) (*dto.UserInfo, error) {
 	user, err := u.userDao.SelectByEmail(vo.Email)
 	if user != nil {
 		log.Println("User is already exist!")
@@ -87,6 +89,7 @@ func (u *UserServiceImpl) FindByEmail(ctx context.Context, email string) (*dto.U
 	}, nil
 }
 
+// FindBooksByUserID grpc的调用
 func (u *UserServiceImpl) FindBooksByUserID(ctx context.Context, id uint64) (interface{}, error) {
 	req := &pbbook.BooksByUserIDRequest{UserID: id}
 	res, err := u.bookClient.FindBooksByUserID(ctx, req)
