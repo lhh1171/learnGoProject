@@ -12,6 +12,7 @@ import (
 	kithttp "github.com/go-kit/kit/transport/http"
 )
 
+// NewHttpHandler go-kit在这里使用
 // NewHttpHandler gin框架
 func NewHttpHandler(ctx context.Context, endpoints *endpoint.UserEndpoints) *gin.Engine {
 	r := utils.NewRouter(ctx.Value("ginMod").(string))

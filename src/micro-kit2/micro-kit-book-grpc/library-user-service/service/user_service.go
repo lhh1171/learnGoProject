@@ -92,6 +92,7 @@ func (u *UserServiceImpl) FindByEmail(ctx context.Context, email string) (*dto.U
 // FindBooksByUserID grpc的调用
 func (u *UserServiceImpl) FindBooksByUserID(ctx context.Context, id uint64) (interface{}, error) {
 	req := &pbbook.BooksByUserIDRequest{UserID: id}
+	//调用library-book-grpc-service  FindBooksByUserID
 	res, err := u.bookClient.FindBooksByUserID(ctx, req)
 	if err != nil {
 		return nil, err

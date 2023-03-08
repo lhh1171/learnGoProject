@@ -8,6 +8,7 @@ import (
 )
 
 type BookService interface {
+	// FindBooksByUserID 继承该方法
 	FindBooksByUserID(ctx context.Context, req *pbbook.BooksByUserIDRequest) (*pbbook.BooksResponse, error)
 }
 

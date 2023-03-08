@@ -97,5 +97,5 @@ var Book_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "protos/book/book.proto",
+	Metadata: "book/book.proto",
 }
