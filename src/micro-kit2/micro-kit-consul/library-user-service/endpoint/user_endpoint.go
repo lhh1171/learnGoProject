@@ -1,9 +1,9 @@
 package endpoint
 
 import (
+	"com/lhh/micro/kit/library-user-service/dto"
+	"com/lhh/micro/kit/library-user-service/service"
 	"context"
-	"micro/kit/library-user-service/dto"
-	"micro/kit/library-user-service/service"
 	"strconv"
 
 	"github.com/go-kit/kit/endpoint"
@@ -59,5 +59,12 @@ func MakeFindBooksByUserIDEndpoint(svc service.UserService) endpoint.Endpoint {
 			return nil, err
 		}
 		return books, nil
+	}
+}
+
+func MakeHealthEndpoint(svc service.UserService) endpoint.Endpoint {
+	return func(ctx context.Context, request interface{}) (response interface{}, err error) {
+		status := svc.HealthCheck()
+		return status, nil
 	}
 }

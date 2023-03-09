@@ -1,0 +1,30 @@
+server:
+  port: 10086
+  mode: debug
+  name: "user-service"
+
+mysql:
+  host: "localhost"
+  port: 3306
+  db: "library"
+  username: "root"
+  password: "root"
+  debug: true
+
+ratelimit:
+  fillInterval: 1
+  capacity: 3
+
+consul:
+  addr: "http://localhost:8500"
+  interval: "10s"
+  timeout: "1s"
+
+grpc:
+  retrymax: 3
+  retrytimeout: 500 
+  name: "book-rpc-service"
+
+#docker run -p 8181:9002 --name hystrix-dashboard mlabouardy/hystrix-dashboard:latest
+hystrix:
+  streamport: 9999

@@ -5,7 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fc92998-035c-4ba9-8c98-ca742617fd93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-grpc-service/book_rpc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-grpc-service/dao/book_dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-grpc-service/endpoint/book_endpoint.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-grpc-service/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-grpc-service/models/book.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-grpc-service/service/book_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-grpc-service/transport/book_transport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-service/book.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-service/dao/book_dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-service/dto/book_dto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-service/endpoint/book_endpoint.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-service/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-service/models/book.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-service/service/book_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-book-service/transport/book_transport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-user-service/dao/user_dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-user-service/dto/user_dto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-user-service/endpoint/book_rpc_endpoint.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-user-service/endpoint/user_endpoint.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-user-service/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-user-service/models/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-user-service/service/user_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-user-service/transport/user_transport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/library-user-service/user.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/protos/book/book.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/protos/book/book.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/protos/book/book_grpc.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-consul/sql/library.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-grpc-service/book_rpc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-grpc-service/dao/book_dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-grpc-service/endpoint/book_endpoint.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-grpc-service/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-grpc-service/models/book.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-grpc-service/service/book_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-grpc-service/transport/book_transport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-service/book.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-service/dao/book_dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-service/dto/book_dto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-service/endpoint/book_endpoint.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-service/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-service/models/book.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-service/service/book_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-book-service/transport/book_transport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-user-service/dao/user_dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-user-service/dto/user_dto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-user-service/endpoint/book_rpc_endpoint.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-user-service/endpoint/user_endpoint.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-user-service/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-user-service/models/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-user-service/service/user_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-user-service/transport/user_transport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-user-service/user.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/protos/book/book.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/protos/book/book.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/protos/book/book_grpc.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/sql/library.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/library-user-service/endpoint/user_endpoint.go" beforeDir="false" afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/library-user-service/endpoint/user_endpoint.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/library-user-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/library-user-service/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/library-user-service/service/user_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/library-user-service/service/user_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/library-user-service/transport/user_transport.go" beforeDir="false" afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/library-user-service/transport/user_transport.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/library-user-service/user.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-book-grpc/library-user-service/user.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,19 +1,17 @@
 package transport
 
 import (
+	"com/lhh/micro/kit/library-user-service/dto"
+	"com/lhh/micro/kit/library-user-service/endpoint"
+	"com/lhh/micro/kit/pkg/utils"
 	"context"
 	"encoding/json"
-	"micro/kit/library-user-service/dto"
-	"micro/kit/library-user-service/endpoint"
-	"micro/kit/pkg/utils"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
 	kithttp "github.com/go-kit/kit/transport/http"
 )
 
-// NewHttpHandler go-kit在这里使用
-// NewHttpHandler gin框架
 func NewHttpHandler(ctx context.Context, endpoints *endpoint.UserEndpoints) *gin.Engine {
 	r := utils.NewRouter(ctx.Value("ginMod").(string))
 
@@ -50,8 +48,15 @@ func NewHttpHandler(ctx context.Context, endpoints *endpoint.UserEndpoints) *gin
 				utils.EncodeJsonResponse,
 			).ServeHTTP(c.Writer, c.Request)
 		})
-
 	}
+
+	r.GET("/health", func(c *gin.Context) {
+		kithttp.NewServer(
+			endpoints.HealthEndpoint,
+			decodeHealthRequest,
+			utils.EncodeJsonResponse,
+		).ServeHTTP(c.Writer, c.Request)
+	})
 
 	return r
 }
@@ -90,4 +95,8 @@ func decodeFindBooksByUserID(_ context.Context, r *http.Request) (interface{}, e
 		return nil, err
 	}
 	return req.UserID, nil
+}
+
+func decodeHealthRequest(_ context.Context, _ *http.Request) (interface{}, error) {
+	return struct{}{}, nil
 }

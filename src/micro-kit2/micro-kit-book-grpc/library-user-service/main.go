@@ -1,12 +1,15 @@
 package main
 
 import (
+	"github.com/juju/ratelimit"
 	"micro/kit/library-user-service/dao"
 	"micro/kit/library-user-service/endpoint"
 	"micro/kit/library-user-service/service"
 	"micro/kit/library-user-service/transport"
 	"micro/kit/pkg/configs"
 	"micro/kit/pkg/databases"
+	"micro/kit/pkg/ratelimits"
+	"time"
 
 	"context"
 	"flag"
@@ -57,15 +60,19 @@ func main() {
 
 	//grpClient的初始化
 	bookClient := pbbook.NewBookClient(conn)
+	log.Println(configs.Conf.FillInterval, configs.Conf.RatelimitConfig.Capacity)
+	// 创建令牌桶
+	bucket := ratelimit.NewBucket(time.Second*time.Duration(configs.Conf.FillInterval), int64(configs.Conf.RatelimitConfig.Capacity))
+	limiter := ratelimits.NewTokenBucketLimiter(bucket)
 
 	//启用服务的对象
 	userDao := dao.NewUserDaoImpl()
 	userService := service.NewUserServiceImpl(userDao, bookClient)
 	userEndpoints := &endpoint.UserEndpoints{
-		RegisterEndpoint:          endpoint.MakeRegisterEndpoint(userService),
-		FindByIDEndpoint:          endpoint.MakeFindByIDEndpoint(userService),
-		FindByEmailEndpoint:       endpoint.MakeFindByEmailEndpoint(userService),
-		FindBooksByUserIDEndpoint: endpoint.MakeFindBooksByUserIDEndpoint(userService),
+		RegisterEndpoint:          limiter(endpoint.MakeRegisterEndpoint(userService)),
+		FindByIDEndpoint:          limiter(endpoint.MakeFindByIDEndpoint(userService)),
+		FindByEmailEndpoint:       limiter(endpoint.MakeFindByEmailEndpoint(userService)),
+		FindBooksByUserIDEndpoint: limiter(endpoint.MakeFindBooksByUserIDEndpoint(userService)),
 	}
 
 	//配置文件，kv装入context

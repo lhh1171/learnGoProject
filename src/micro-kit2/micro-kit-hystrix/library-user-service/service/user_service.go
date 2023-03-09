@@ -1,15 +1,14 @@
 package service
 
 import (
+	"com/lhh/micro/kit/library-user-service/dao"
+	"com/lhh/micro/kit/library-user-service/dto"
+	"com/lhh/micro/kit/library-user-service/models"
 	"context"
 	"errors"
 	"log"
-	"micro/kit/library-user-service/dao"
-	"micro/kit/library-user-service/dto"
-	"micro/kit/library-user-service/models"
 
-	pbbook "micro/kit/protos/book"
-
+	kitendpoint "github.com/go-kit/kit/endpoint"
 	"github.com/jinzhu/gorm"
 )
 
@@ -24,22 +23,22 @@ type UserService interface {
 	FindByID(ctx context.Context, id uint64) (*dto.UserInfo, error)
 	FindByEmail(ctx context.Context, email string) (*dto.UserInfo, error)
 	FindBooksByUserID(ctx context.Context, id uint64) (interface{}, error)
+	HealthCheck() bool
 }
 
 type UserServiceImpl struct {
 	userDao    dao.UserDao
-	bookClient pbbook.BookClient
+	grpcClient kitendpoint.Endpoint
 }
 
-func NewUserServiceImpl(userDao dao.UserDao, bookClient pbbook.BookClient) UserService {
+func NewUserServiceImpl(userDao dao.UserDao, grpcClient kitendpoint.Endpoint) UserService {
 	return &UserServiceImpl{
 		userDao:    userDao,
-		bookClient: bookClient,
+		grpcClient: grpcClient,
 	}
 }
 
-func (u *UserServiceImpl) Register(ctx context.Context,
-	vo *dto.RegisterUser) (*dto.UserInfo, error) {
+func (u *UserServiceImpl) Register(ctx context.Context, vo *dto.RegisterUser) (*dto.UserInfo, error) {
 	user, err := u.userDao.SelectByEmail(vo.Email)
 	if user != nil {
 		log.Println("User is already exist!")
@@ -88,13 +87,14 @@ func (u *UserServiceImpl) FindByEmail(ctx context.Context, email string) (*dto.U
 	}, nil
 }
 
-// FindBooksByUserID grpc的调用
 func (u *UserServiceImpl) FindBooksByUserID(ctx context.Context, id uint64) (interface{}, error) {
-	req := &pbbook.BooksByUserIDRequest{UserID: id}
-	//调用library-book-grpc-service  FindBooksByUserID
-	res, err := u.bookClient.FindBooksByUserID(ctx, req)
+	res, err := u.grpcClient(ctx, id)
 	if err != nil {
 		return nil, err
 	}
 	return res, nil
+}
+
+func (u *UserServiceImpl) HealthCheck() bool {
+	return true
 }
