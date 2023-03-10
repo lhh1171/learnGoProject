@@ -1,6 +1,6 @@
 package main
 
-import "mainProject/myref"
+import "mainProject2/myref"
 
 func main() {
 	/*函数声明和调用*/

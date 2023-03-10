@@ -1,16 +1,16 @@
 package main
 
-import "Cgo/cgo/mycgo6_err"
+import "fmt"
 
 func main() {
-	//fmt.Println("fffffffffffff")
+	fmt.Println("fffffffffffff")
 
 	//cgo.Mycgo1()
 	//cgo.Mycgo2()
 	//mycgo3.Mycgo3()
 	//mycgo4.Mycgo4()
 	//mycgo5.Mycgo5()
-	mycgo6_err.Mycgo6()
+	//mycgo6_err.Mycgo6()
 	//mycgo7.Mycgo7()
 	//mycgo8.Mycgo8_1()
 	//mycgo8.Mycgo8_2()

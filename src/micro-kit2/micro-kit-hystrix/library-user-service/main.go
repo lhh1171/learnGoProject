@@ -106,3 +106,15 @@ func main() {
 	fmt.Println(<-errChan)
 	registrar.Deregister()
 }
+
+//type MyHandler struct{}
+//
+//
+//func (h *MyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+//	fmt.Fprint(w, "Hello, World!")
+//}
+//
+//func main() {
+//	handler := &MyHandler{}
+//	http.ListenAndServe(":8080", handler)
+//}

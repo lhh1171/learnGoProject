@@ -5,7 +5,145 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="621cfc7a-1f35-4e43-a645-326566e94555" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GOAPI4/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/数组/solution27.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/数组/solution59.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/数组/solution704.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/数组/solution977.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../firstProject1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/.idea/Cgo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/.idea/Cgo3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/bartest.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/bartest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo1.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo2.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo3/hello.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo3/hello.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo3/mycgo3.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo3/mycgo3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo4/hello.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo4/hello.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo4/hello.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo4/hello.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo4/mycgo4.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo4/mycgo4.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo5/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo5/hello.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo5/hello.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo5/hello.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo5/mycgo5.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo5/mycgo5.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo6_err/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo6_err/hello/hello.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo6_err/mycgo6.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo6_err/mycgo6.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo7/mycgo7.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo7/mycgo7.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo7/readme" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo7/readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/c语言导出go类型" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/c语言导出go类型" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_1.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/mycgo8_1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_2.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/mycgo8_2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_3.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/mycgo8_3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_4.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/mycgo8_4.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_5.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/mycgo8_5.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_6.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/mycgo8_6.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_7.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/mycgo8_7.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_8.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/mycgo8_8.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/mycgo8_9.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/mycgo8_9.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/数据类型对应关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/数据类型对应关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo8/数据类型对应关系2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo8/数据类型对应关系2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo9.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo9.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo9/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/num.a" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo9/num.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/num.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo9/num.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/num.so" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo9/num.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/testmain.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo9/testmain.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo/mycgo9/编译" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo/mycgo9/编译" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo内部机制.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo内部机制.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo执行的效果.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo执行的效果.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo流程.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo流程.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/cgo的流程" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/cgo的流程" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/goandc.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/goandc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/load_so.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/load_so.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/load_so.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/load_so.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/test_so.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/test_so.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/test_so.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/test_so.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/test_so.so" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/test_so.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cgo/反汇编" beforeDir="false" afterPath="$PROJECT_DIR$/../Cgo3/反汇编" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/.idea/GOAPI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/MyUrlParser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/bytes/bytesbase.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/bytes/bytesbuffer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/bytes/bytesreader.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/go正则" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/mybase64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/myjson.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/mylinefilter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/myrandom.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/myreg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/mysha1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/mystr.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/mystring2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GOAPI/myapi/mytime.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/.idea/Myoop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myexception/myexception.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/a/AAA.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/a/AAA2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/b/BBB.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/b/BBB2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/c/CCC.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/myOps.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/myintf.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/myintf2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/myintf3.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/myintf4.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/testAB.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/testCircle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/myintf/testpp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/mymethod/finallize.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/mymethod/mymethod.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/mystruct/mystruct.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/mystruct/mystruct2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/template/ITemp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/template/Override.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Myoop/template/template.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VGO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VGO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstP/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstP/.idea/firstP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstP/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstP/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstProject/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../firstProject1/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstProject/.idea/firstProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../firstProject1/.idea/firstProject1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstProject/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../firstProject1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstProject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../firstProject1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstProject/ccc/aaa.go" beforeDir="false" afterPath="$PROJECT_DIR$/../firstProject1/ccc/aaa.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstProject/ccc/goMap.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../firstProject1/ccc/goMap.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstProject/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go_build_main_go" beforeDir="false" afterPath="$PROJECT_DIR$/../go_build_main_go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mainProject/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../mainProject2/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mainProject/.idea/mainProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../mainProject2/.idea/mainProject2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mainProject/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mainProject2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mainProject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mainProject2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mainProject/abc/MyStruct.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mainProject2/abc/MyStruct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mainProject/abc/const.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mainProject2/abc/const.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mainProject/abc/fun.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mainProject2/abc/fun.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mainProject/abc/myDefer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mainProject2/abc/myDefer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mainProject/abc/oop.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mainProject2/abc/oop.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mainProject/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mainProject2/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mainProject/myref/myref.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mainProject2/myref/myref.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit/.idea/micro-kit.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit/library-user-service/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit/library-user-service/user.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-user-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../micro-kit2/micro-kit-hystrix/library-user-service/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
