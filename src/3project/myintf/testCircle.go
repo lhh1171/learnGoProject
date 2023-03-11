@@ -1,61 +1,62 @@
 package myintf
 
 import (
+	"3project/myintf/a"
+	"3project/myintf/b"
 	"fmt"
-	"iotestgo/myoop/myintf/a"
-	"iotestgo/myoop/myintf/b"
 )
 
-/*在任何语言写不了*/
-//type Aaa struct {
-//	b Bbb
-//}
-//
-//type Bbb struct {
-//	a Aaa
-//}
+/*在任何语言写不了,栈溢出，Invalid recursive type 'Bbb' Bbb → Aaa → Bbb,解析出错*/
+/*type Aaa struct {
+	b Bbb
+}
 
-/*=====================*/
+type Bbb struct {
+	a Aaa
+}*/
+/*=========回圈引用============*/
 
-//type Aaa struct {
-//	b *Bbb
-//}
-//
-//func (a Aaa) aaa() {
-//	a.b.bbb()
-//}
-//
-//type Bbb struct {
-//	a *Aaa
-//}
-//
-//func (b Bbb) bbb() {
-//	b.a.aaa()
-//}
-//
-//// TestCircle1
-/////*栈溢出*/
-//func TestCircle1() {
-//	a:=Aaa{}
-//	b:=Bbb{}
-//	a.b=&b
-//	b.a=&a
-//	a.aaa()
-//}
+/*type Aaa struct {
+	b *Bbb
+}
+
+func (a Aaa) aaa() {
+	a.b.bbb()
+}
+
+type Bbb struct {
+	a *Aaa
+}
+
+func (b Bbb) bbb() {
+	b.a.aaa()
+}*/
+
+// TestCircle1
+// /*栈溢出*/
+/*
+func TestCircle1() {
+	a := Aaa{}
+	b := Bbb{}
+	a.b = &b
+	b.a = &a
+	a.aaa()
+}*/
 
 // TestCircle2 /*编译报错
-//package command-line-arguments
-//	imports Myoop/myintf
-//	imports Myoop/myintf/a
+/*package command-line-arguments
+imports Myoop/myintf
+imports Myoop/myintf/a
 
-//	imports Myoop/myintf/b
-//	imports Myoop/myintf/a: import cycle not allowed*/
-//func TestCircle2() {
-//	a := a2.Aaa{}
-//	fmt.Println(a)
-//	b := b2.Bbb{}
-//	fmt.Println(b)
-//}
+imports Myoop/myintf/b
+imports Myoop/myintf/a: import cycle not allowed*/
+
+/*func TestCircle2() {
+	a := a.Aaa{}
+	fmt.Println(a)
+	b := b.Bbb{}
+	fmt.Println(b)
+}*/
 
 type Aaaa struct {
 	b *Bbbb

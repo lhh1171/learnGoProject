@@ -2,12 +2,14 @@ package template
 
 import "fmt"
 
+//通过子类来来获取父类
+
 // ISMS ISMS
 type ISMS interface {
 	send(content string, phone int) error
 }
 
-// SMS 短信发送基类
+// SMS 短信发送基类实现了send方法
 type sms struct {
 	ISMS
 }
@@ -39,10 +41,12 @@ type TelecomSms struct {
 // NewTelecomSms NewTelecomSms
 // 实现继承并且重写了模版模式
 func NewTelecomSms() *TelecomSms {
+
 	tel := &TelecomSms{}
 	// 这里有点绕，是因为 go 没有继承，用嵌套结构体的方法进行模拟
 	// 这里将子类作为接口嵌入父类，就可以让父类的模板方法 Send 调用到子类的函数
 	// 实际使用中，我们并不会这么写，都是采用组合+接口的方式完成类似的功能
+	//因为tel实现了send方法
 	tel.sms = &sms{ISMS: tel}
 	return tel
 }
@@ -55,5 +59,7 @@ func (tel *TelecomSms) send(content string, phone int) error {
 func TestSmsSend() {
 	//传一个指针
 	tel := NewTelecomSms()
+	//tel.sms.Send1("test", 1239999)
+	//可以简写为
 	tel.Send1("test", 1239999)
 }

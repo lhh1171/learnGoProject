@@ -1,8 +1,6 @@
 package main
 
-import (
-	"3project/template"
-)
+import "3project/myexception"
 
 func main() {
 	/*========对象成员变量=======*/
@@ -68,10 +66,10 @@ func main() {
 	go语言的interface不影响数据段，只影响代码段*/
 	//myintf.Myintf2()
 
-	/*栈溢出*/
+	/*回圈引用,栈溢出*/
 	//myintf.TestCircle1()
 
-	/*回圈引用 底层也是一个栈溢出 import的时候循环调用init方法*/
+	/*回圈引用 分包写的 底层也是一个栈溢出 import的时候循环调用init方法*/
 	//myintf.TestCircle2()
 
 	/*正常的*/
@@ -96,13 +94,13 @@ func main() {
 	//myexception.Myexception4()
 
 	/*先panic 运用defer最后打印错误信息和recover*/
-	//myexception.Myexception5()
+	myexception.Myexception5()
 
 	/*===========模版模式=========*/
 	/*实现方法继承的Override*/
 	//template.TestOverride()
 
 	/*两次实现模版模式*/
-	template.TestITemp()
+	//template.TestITemp()
 	//template.TestSmsSend()
 }

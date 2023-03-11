@@ -18,6 +18,10 @@ func MyDefer2() int {
 			fmt.Println(i)
 		}()
 	}
+	for i := 2; i < 4; i++ {
+		//打印3 2
+		defer fmt.Println(i)
+	}
 	return 1
 }
 func xxx() int {

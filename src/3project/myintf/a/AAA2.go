@@ -1,7 +1,7 @@
 package a
 
 import (
-	"Myoop/myintf/c"
+	"3project/myintf/c"
 	"fmt"
 )
 

@@ -24,19 +24,20 @@ type Aaax struct {
 	*tmp
 }
 
-func NewAaa() *Aaax {
-	aa := &Aaax{}
-	aa.tmp = &tmp{ITmp: aa}
-	return aa
-}
-
-// Load 实现方法
+// Aaax Load 实现方法
 func (a *Aaax) load() error {
 	fmt.Println("Aaa Load..........")
 	return nil
 }
 
+func NewAaa() *Aaax {
+	aa := &Aaax{}
+	//因为Aaax实现了load方法所以可以继承
+	aa.tmp = &tmp{ITmp: aa}
+	return aa
+}
+
 func TestITemp() {
 	aa := NewAaa()
-	aa.load1()
+	aa.load()
 }

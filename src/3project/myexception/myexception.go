@@ -103,7 +103,7 @@ func funcb21() {
 	defer func() {
 		err := recover()
 		if err != nil {
-			fmt.Println(err)
+			fmt.Println("jjjj", err)
 		}
 	}()
 
@@ -118,7 +118,7 @@ func funcb22() {
 	defer func() {
 		err := recover()
 		if err != nil {
-			fmt.Println(err)
+			fmt.Println("jjjj", err)
 		}
 	}()
 	panic("B error")
