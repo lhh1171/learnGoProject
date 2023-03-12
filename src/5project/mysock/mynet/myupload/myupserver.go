@@ -66,7 +66,6 @@ func upload(w http.ResponseWriter, r *http.Request) {
 			defer f.Close()
 			io.Copy(f, file)
 		}
-
 	}
 }
 

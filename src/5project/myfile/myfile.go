@@ -24,13 +24,16 @@ func Myfile4() {
 	myioutilcopyfile()
 }
 func Myfile5() {
-	mygetFilelist("/MyProject/goProject/src/goIO")
+	mygetFilelist("/MyProject/goProject/src/5project")
 }
 
 func mywritefile() {
-	userFile := "/MyProject/goProject/src/goIO/xx/myfile.txt" //文件路径
-	fout, err := os.Create(userFile)                          //根据路径创建File的内存地址
-	defer fout.Close()                                        //延迟关闭资源
+	userFile := "/MyProject/goProject/src/5project/xx/myfile.txt" //文件路径
+	//Create 创建或截断命名文件。如果该文件已经存在，则会被截断。
+	//如果该文件不存在，则使用模式 0666（在 umask 之前）创建它。
+	//如果成功，返回的文件上的方法可用于 I/O；
+	fout, err := os.Create(userFile) //根据路径创建File的内存地址
+	defer fout.Close()               //延迟关闭资源
 	if err != nil {
 		fmt.Println(userFile, err)
 		return
@@ -42,9 +45,9 @@ func mywritefile() {
 }
 
 func myreadfile() {
-	userFile := "/MyProject/goProject/src/goIO/xx/myfile.txt" //文件路径
-	fin, err := os.Open(userFile)                             //打开文件,返回File的内存地址
-	defer fin.Close()                                         //延迟关闭资源
+	userFile := "/MyProject/goProject/src/5project/xx/myfile.txt" //文件路径
+	fin, err := os.Open(userFile)                                 //打开文件,返回File的内存地址
+	defer fin.Close()                                             //延迟关闭资源
 	if err != nil {
 		fmt.Println(userFile, err)
 		return
@@ -63,13 +66,13 @@ func myreadfile() {
 }
 
 func mycopyfile() {
-	fi, err := os.Open("/MyProject/goProject/src/goIO/xx/input.txt") //打开输入*File
+	fi, err := os.Open("/MyProject/goProject/src/5project/xx/input.txt") //打开输入*File
 	if err != nil {
 		panic(err)
 	}
 	defer fi.Close()
 
-	fo, err := os.Create("/MyProject/goProject/src/goIO/xx/output.txt") //创建输出*File
+	fo, err := os.Create("/MyProject/goProject/src/5project/xx/output.txt") //创建输出*File
 	if err != nil {
 		panic(err)
 	}
@@ -94,14 +97,14 @@ func mycopyfile() {
 }
 
 func mybufiocopyfile() {
-	fi, err := os.Open("/MyProject/goProject/src/goIO/xx/input.txt") //打开输入*File
+	fi, err := os.Open("/MyProject/goProject/src/5project/xx/input.txt") //打开输入*File
 	if err != nil {
 		panic(err)
 	}
 	defer fi.Close()
 	r := bufio.NewReader(fi) //创建一个读取缓冲流
 
-	fo, err := os.Create("/MyProject/goProject/src/goIO/xx/output.txt") //创建输出*File
+	fo, err := os.Create("/MyProject/goProject/src/5project/xx/output.txt") //创建输出*File
 	if err != nil {
 		panic(err)
 	}
@@ -131,12 +134,12 @@ func mybufiocopyfile() {
 }
 
 func myioutilcopyfile() {
-	b, err := ioutil.ReadFile("/MyProject/goProject/src/goIO/xx/input.txt") //读文件
+	b, err := ioutil.ReadFile("/MyProject/goProject/src/5project/xx/input.txt") //读文件
 	if err != nil {
 		panic(err)
 	}
 
-	err = ioutil.WriteFile("/MyProject/goProject/src/goIO/xx/output.txt", b, 0644) //写文件
+	err = ioutil.WriteFile("/MyProject/goProject/src/5project/xx/output.txt", b, 0644) //写文件
 	if err != nil {
 		panic(err)
 	}

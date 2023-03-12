@@ -1,10 +1,19 @@
 package main
 
-import "5project/mysock/mynet"
+import (
+	"5project/myfile"
+	"5project/mysock/mynet"
+	"5project/mysock/mynet/myrpc"
+	"5project/mysock/mynet/myssl"
+	"5project/mysock/mynet/myupload"
+	"5project/mysock/mynet/template"
+	"5project/mysock/myudp/broadcast"
+	"5project/mysock/myudp/multi"
+)
 
 func main() {
 	//写入文件
-	//myfile.Myfile1()
+	myfile.Myfile1()
 
 	//读出文件内容
 	//myfile.Myfile2()
@@ -16,7 +25,7 @@ func main() {
 	//myfile.Myfile4()
 
 	//扫描文件夹里面的内容
-	//myfile.Myfile5()
+	myfile.Myfile5()
 
 	//文件指针
 	//myfile.Myfile6()
@@ -36,37 +45,37 @@ func main() {
 	//onetoone.MyUdpCli()
 
 	//组播
-	//multi.MyMultiServer()
-	//multi.MyMultiCli()
+	multi.MyMultiServer()
+	multi.MyMultiCli()
 
 	//广播
-	//broadcast.MyBCServer()
-	//broadcast.MyBCCli()
+	broadcast.MyBCServer()
+	broadcast.MyBCCli()
 
 	//=========网络io-http相关================
 	mynet.MyHttp1()
-	//mynet.MyHttp2()
-	//mynet.MyHttp21()
-	//mynet.MyHttp22()
-	//mynet.MyHttp3()
-	//mynet.MyHttp31()
-	//mynet.Myhttpcli()
+	mynet.MyHttp2()
+	mynet.MyHttp21()
+	mynet.MyHttp22()
+	mynet.MyHttp3()
+	mynet.MyHttp31()
+	mynet.Myhttpcli()
 
 	//模版
-	//template.TestTemplate()
+	template.TestTemplate()
 
 	//上传
-	//myupload.MyUpServer()
-	//myupload.MyUpCli()
+	myupload.MyUpServer()
+	myupload.MyUpCli()
 
-	//myssl.MySsl()
-	//myssl.MySslCli()
+	myssl.MySsl()
+	myssl.MySslCli()
 
 	//myhttp2.MyHttp2Server()
 	//myhttp2.MyHttp2Cli()
 
 	//myws.MyWsServer()
 
-	//myrpc.MyRPCServer()
-	//myrpc.MyRPCCli()
+	myrpc.MyRPCServer()
+	myrpc.MyRPCCli()
 }

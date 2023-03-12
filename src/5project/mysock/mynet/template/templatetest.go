@@ -76,7 +76,7 @@ func demo3() {
 }
 
 func demo4() {
-	t, err := template.ParseFiles("/MyProject/goProject/src/goIO/sss/tpl.html")
+	t, err := template.ParseFiles("/MyProject/goProject/src/5project/sss/tpl.html")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -91,7 +91,7 @@ func demo4() {
 		log.Fatal(err)
 	}
 	fmt.Println("=========================================")
-	t, err = template.ParseFiles("/MyProject/goProject/src/goIO/sss/index.html", "/MyProject/goProject/src/goIO/sss/header.html", "/MyProject/goProject/src/goIO/sss/footer.html")
+	t, err = template.ParseFiles("/MyProject/goProject/src/5project/sss/index.html", "/MyProject/goProject/src/5project/sss/header.html", "/MyProject/goProject/src/5project/sss/footer.html")
 	if err != nil {
 		log.Fatal(err)
 	}

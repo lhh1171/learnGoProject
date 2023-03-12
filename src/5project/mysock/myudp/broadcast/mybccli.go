@@ -23,6 +23,7 @@ func MyBCCli() {
 	if err != nil {
 		fmt.Println(err)
 	}
+	//data[:n]从0到n
 	fmt.Printf("read %s from <%s>\n", data[:n], conn.RemoteAddr())
 	b := make([]byte, 1)
 	os.Stdin.Read(b)

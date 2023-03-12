@@ -11,8 +11,8 @@ import (
 
 const (
 	_HTTP2URLBase = "https://localhost:9000"
-	_CertFile     = "/MyProject/goProject/src/goIO/mysock/mynet/myhttp2/cert.pem"
-	_KeyFile      = "/MyProject/goProject/src/goIO/mysock/mynet/myhttp2/key.pem"
+	_CertFile     = "/MyProject/goProject/src/5project/mysock/mynet/myhttp2/cert.pem"
+	_KeyFile      = "/MyProject/goProject/src/5project/mysock/mynet/myhttp2/key.pem"
 )
 
 type handlerFunc func(w http.ResponseWriter, r *http.Request)

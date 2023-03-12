@@ -23,6 +23,8 @@ func postFile(filename string, targetUrl string) error {
 	bodyWriter := multipart.NewWriter(bodyBuf)
 
 	//关键的一步操作
+	//CreateFormFile 是CreatePart的便利包装器。
+	//它使用提供的字段名称和文件名创建一个新的表单数据标题
 	fileWriter, err := bodyWriter.CreateFormFile("uploadfile", filename)
 	if err != nil {
 		fmt.Println("error writing to buffer")
@@ -30,19 +32,20 @@ func postFile(filename string, targetUrl string) error {
 	}
 
 	//打开文件句柄操作
-	fh, err := os.Open("/MyProject/goProject/src/goIO/mysock/mynet/myupload/" + filename)
+	fh, err := os.Open("/MyProject/goProject/src/5project/mysock/mynet/myupload/" + filename)
 	if err != nil {
 		fmt.Println("error opening file")
 		return err
 	}
 	defer fh.Close()
 
-	//iocopy
+	//iocopy 把fh拷贝到fileWriter
 	_, err = io.Copy(fileWriter, fh)
 	if err != nil {
 		return err
 	}
 
+	//FormDataContentType 返回具有此Writer边界的HTTP multipart/form-data 的 Content-Type。
 	contentType := bodyWriter.FormDataContentType()
 	bodyWriter.Close()
 
