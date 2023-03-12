@@ -15,6 +15,7 @@ type Response2 struct {
 
 func MyJson() {
 
+	//Marshal 返回 v 的 JSON 编码。
 	bolB, _ := json.Marshal(true)
 	fmt.Println(string(bolB))
 

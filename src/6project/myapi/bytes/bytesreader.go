@@ -1,4 +1,5 @@
 package bytes
+
 import (
 	"bytes"
 	"fmt"
@@ -50,7 +51,7 @@ func BytesReader() {
 	}
 
 	b3 := []byte("string builder")
-	// Reset resets the Reader to be reading from b.
+	// Reset 将 Reader 重置为从 b 读取。
 	reader2.Reset(b3)
 	println(reader2.Len())
 

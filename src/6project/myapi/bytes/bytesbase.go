@@ -1,4 +1,5 @@
 package bytes
+
 import (
 	"bytes"
 )
@@ -19,6 +20,7 @@ func spilt(r rune) bool {
 func BytesBase() {
 
 	println("hello world")
+	//malloc 类似
 	buff1 := make([]byte, 2) // 创建一个切片
 	writeUInt16(buff1, uint16(12))
 
@@ -50,7 +52,7 @@ func BytesBase() {
 	/**
 	Rune literals are just an integer value (as you've written).
 	They are "mapped" to their unicode codepoint.
-	 */
+	*/
 	a := rune('e')
 	res = bytes.IndexRune(buff3, a) // -1
 	println(res)
