@@ -8,6 +8,7 @@ import (
 	"github.com/gorilla/websocket"
 )
 
+// 构建连接
 type connection struct {
 	ws   *websocket.Conn
 	sc   chan []byte
@@ -23,8 +24,11 @@ func myws(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	c := &connection{sc: make(chan []byte, 256), ws: ws, data: &Data{}}
+	//geihub创建连接
 	h.r <- c
+	//里面有个for循环写东西,直接写
 	go c.writer()
+	//for循环读取c放入h.b，等待hub的循环读取
 	c.reader()
 	defer func() {
 		c.data.Type = "logout"

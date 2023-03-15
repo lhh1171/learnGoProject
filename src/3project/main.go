@@ -1,6 +1,10 @@
 package main
 
-import "3project/myexception"
+import (
+	"3project/myexception"
+	"3project/myintf"
+	"3project/mystruct"
+)
 
 func main() {
 	/*========对象成员变量=======*/
@@ -35,7 +39,7 @@ func main() {
 	//mystruct.Mystruct9()
 
 	/*自定义New*/
-	//mystruct.Mystruct10()
+	mystruct.Mystruct10()
 
 	/*======对象的成员方法=====*/
 	/*值和址的对象调用函数*/
@@ -55,7 +59,7 @@ func main() {
 
 	/*========接口================*/
 	/*ops当做接口,动态代理*/
-	//myintf.TestOps()
+	myintf.TestOps()
 
 	/*转类型，用interface
 	obj:=接口类型对象.(type)

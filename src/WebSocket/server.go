@@ -9,7 +9,9 @@ import (
 
 func main() {
 	router := mux.NewRouter()
+	//启动run方法,监控h里有无东西
 	go h.run()
+	//引用了myws对象处理websocket
 	router.HandleFunc("/ws", myws)
 	if err := http.ListenAndServe("127.0.0.1:8080", router); err != nil {
 		fmt.Println("err:", err)

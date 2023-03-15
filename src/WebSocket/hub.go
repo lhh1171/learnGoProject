@@ -19,6 +19,7 @@ type hub struct {
 func (h *hub) run() {
 	for {
 		select {
+		//hub里面有连接的话
 		case c := <-h.r:
 			h.c[c] = true
 			c.data.Ip = c.ws.RemoteAddr().String()
@@ -26,11 +27,13 @@ func (h *hub) run() {
 			c.data.UserList = user_list
 			data_b, _ := json.Marshal(c.data)
 			c.sc <- data_b
+		//	hub断开连接
 		case c := <-h.u:
 			if _, ok := h.c[c]; ok {
 				delete(h.c, c)
 				close(c.sc)
 			}
+		//	读取数据
 		case data := <-h.b:
 			for c := range h.c {
 				select {

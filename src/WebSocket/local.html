@@ -12,7 +12,7 @@
 </head>
 <body>
 <div style="width: 800px;height: 600px;margin: 30px auto;text-align: center">
-    <h1>www.5lmh.comy演示聊天室</h1>
+    <h1>聊天室</h1>
     <div style="width: 800px;border: 1px solid gray;height: 300px;">
         <div style="width: 200px;height: 300px;float: left;text-align: left;">
             <p><span>当前在线:</span><span id="user_num">0</span></p>
@@ -23,6 +23,7 @@
         </div>
     </div>
     <br>
+<!--    按回车键发送confirm-->
     <textarea id="msg_box" rows="6" cols="50" onkeydown="confirm(event)"></textarea><br>
     <input type="button" value="发送" onclick="send()">
 </div>
@@ -35,6 +36,7 @@
         var data = "系统消息：建立连接成功";
         listMsg(data);
     };
+    //接收消息的，来自服务端
     ws.onmessage = function (e) {
         var msg = JSON.parse(e.data);
         var sender, user_name, name_list, change_type;
@@ -47,6 +49,7 @@
                 break;
             case 'handshake':
                 var user_info = {'type': 'login', 'content': uname};
+                //发送给服务端
                 sendMsg(user_info);
                 return;
             case 'login':
@@ -54,6 +57,7 @@
                 user_name = msg.content;
                 name_list = msg.user_list;
                 change_type = msg.type;
+                //下线
                 dealUser(user_name, change_type, name_list);
                 return;
         }
@@ -66,12 +70,13 @@
     };
     function confirm(event) {
         var key_num = event.keyCode;
-        if (13 == key_num) {
+        if (13 === key_num) {
             send();
         } else {
             return false;
         }
     }
+    //用户发送消息
     function send() {
         var msg_box = document.getElementById("msg_box");
         var content = msg_box.value;
@@ -81,6 +86,7 @@
         sendMsg(msg);
         msg_box.value = '';
     }
+    //列出消息
     function listMsg(data) {
         var msg_list = document.getElementById("msg_list");
         var msg = document.createElement("p");
@@ -88,6 +94,7 @@
         msg_list.appendChild(msg);
         msg_list.scrollTop = msg_list.scrollHeight;
     }
+
     function dealUser(user_name, type, name_list) {
         var user_list = document.getElementById("user_list");
         var user_num = document.getElementById("user_num");
@@ -105,10 +112,14 @@
         var data = '系统消息: ' + user_name + ' 已' + change;
         listMsg(data);
     }
+
+    //发送消息向服务端发送消息
     function sendMsg(msg) {
         var data = JSON.stringify(msg);
         ws.send(data);
     }
+
+    //获取uuid
     function uuid(len, radix) {
         var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
         var uuid = [], i;

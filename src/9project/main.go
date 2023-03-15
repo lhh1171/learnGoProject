@@ -1,13 +1,14 @@
 package main
 
 import (
+	"9project/mygoroutine"
 	"9project/mytime"
 )
 
 func main() {
 	/*========chan的使用=========*/
 	//简单使用
-	//mygoroutine.TestSimple1()
+	mygoroutine.TestSimple1()
 
 	//只读只写
 	//mygoroutine.TestSimple2()

@@ -63,7 +63,6 @@ func httpPostForm() {
 	}
 
 	fmt.Println(string(body))
-
 }
 
 func httpDo() {

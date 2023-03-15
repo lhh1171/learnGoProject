@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"7project/cgo"
+	"fmt"
+)
 
 func main() {
 	fmt.Println("fffffffffffff")
 
-	//cgo.Mycgo1()
+	cgo.Mycgo1()
 	//cgo.Mycgo2()
 	//mycgo3.Mycgo3()
 	//mycgo4.Mycgo4()

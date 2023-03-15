@@ -1,7 +1,6 @@
 package main
 
 import (
-	"2project/abc"
 	"2project/myref"
 )
 
@@ -12,9 +11,9 @@ func main() {
 	/*偏函数*/
 	//abc.PartialFunc()
 	/*闭包*/
-	abc.Ff3()
+	//abc.Ff3()
 	/*defer函数  压栈绑定的是外部函数*/
-	abc.MyDefer()
+	//abc.MyDefer()
 	//abc.MyDefer2()
 	//defer
 	//abc.MyStruct()
@@ -47,9 +46,9 @@ func main() {
 	//myref.Myref5()
 
 	//reflect.TypeOf  返回Type对象 查看里面的属性
-	myref.Myref6()
+	//myref.Myref6()
 
 	//运用反射构建map量表，classForName
-	//myref.Myref7()
+	myref.Myref7()
 
 }

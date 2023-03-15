@@ -11,7 +11,7 @@ func MyExec() {
 	cmd := exec.Command("bash")
 	cmd.Stdin = in
 	go func() {
-		in.WriteString("echo hello world444441 > /MyProject/goProject/src/goIO/xx/test.txt\n")
+		in.WriteString("echo hello world444441 > ./test.txt\n")
 		in.WriteString("exit\n")
 	}()
 
