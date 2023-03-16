@@ -51,6 +51,7 @@ func main() {
 	ctx := context.Background()
 
 	findBooksEndpoint := endpoint.MakeFindBooksEndpoint
+	//通过rpc调用方法
 	grpcClient := registers.GRPCClient(configs.Conf, findBooksEndpoint, logger)
 
 	hystrix.ConfigureCommand("Find books", hystrix.CommandConfig{Timeout: 1000})

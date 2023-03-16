@@ -14,11 +14,10 @@ import (
 	"github.com/go-kit/kit/log"
 )
 
-var confFile = flag.String("f", "apigateway.yaml", "user config file")
+var confFile = flag.String("f", "library-apigateway/apigateway.yaml", "user config file")
 
 func main() {
 	flag.Parse()
-
 	var logger log.Logger
 	{
 		logger = log.NewLogfmtLogger(os.Stderr)
@@ -34,10 +33,13 @@ func main() {
 	ctx := context.Background()
 
 	ctx = context.WithValue(ctx, "ginMod", configs.Conf.ServerConfig.Mode)
+	//创建路由对应
 	r := transport.NewHttpHandler(ctx, configs.Conf, logger)
 
 	errChan := make(chan error)
+
 	go func() {
+		//启动路由,参数是port
 		errChan <- r.Run(fmt.Sprintf(":%s", strconv.Itoa(configs.Conf.ServerConfig.Port)))
 	}()
 
