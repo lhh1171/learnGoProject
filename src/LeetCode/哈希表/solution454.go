@@ -1,6 +1,7 @@
 package 哈希表
 
-func fourSumCount(nums1 []int, nums2 []int, nums3 []int, nums4 []int) int {
+func fourSumCount(nums1 []int, nums2 []int,
+	nums3 []int, nums4 []int) int {
 	m := make(map[int]int) //key:a+b的数值，value:a+b数值出现的次数
 	count := 0
 	// 遍历nums1和nums2数组，统计两个数组元素之和，和出现的次数，放到map中
