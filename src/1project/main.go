@@ -11,6 +11,12 @@ import (
 // 导包可以起别名
 func main() {
 	//--------------------包管理------------------------
+	//import (
+	//	"1project/ccc"
+	//. "1project/ccc"
+	//Tu "1project/ccc"
+	//"fmt"
+	//)
 	ccc.Aaa()
 	Aaa()
 	Tu.Aaa()
