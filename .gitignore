@@ -5,3 +5,4 @@ src/github.com/
 src/gomicro自动生成框架/
 src/iotestgo_grpc/
 src/golang.org/
+/.idea/
